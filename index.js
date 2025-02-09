@@ -45,3 +45,6 @@ coustomerModel.updateOne({name:"dhananjay"},{age:22}).then((res)=>
   {
 console.log(res)
 }).catch(err=>console.log(err))
+coustomerModel.updateMany({age:{$gt:22}},{age:23}).then
+(res=> console.log(res)).catch(err=>console.log(err)
+)
