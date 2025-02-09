@@ -41,10 +41,19 @@ const coustomerModel=mongoose.model("coustomer",userSchema)
 // coustomerModel.find({age:{$gte:24}}).then((res)
 // =>{console.log(res)}).catch(err=>{console.log(err)})
 // coustomerModel.findById("67a83cf2219f778c9dc519df").then((res)=>{console.log(res)}).catch(err=>{console.log(err)})
-coustomerModel.updateOne({name:"dhananjay"},{age:22}).then((res)=>
+// coustomerModel.updateOne({name:"dhananjay"},{age:22}).then((res)=>
+//   {
+// console.log(res)
+// }).catch(err=>console.log(err))
+// coustomerModel.updateMany({age:{$gt:22}},{age:23}).then
+// (res=> console.log(res)).catch(err=>console.log(err)
+// )
+coustomerModel.findByIdAndUpdate({name:"dhananjay"},{age:20}).then((res)=>
   {
 console.log(res)
 }).catch(err=>console.log(err))
-coustomerModel.updateMany({age:{$gt:22}},{age:23}).then
-(res=> console.log(res)).catch(err=>console.log(err)
-)
+// coustomerModel.updateMany({age:{$gt:22}},{age:22
+
+// }).then
+// (res=> console.log(res)).catch(err=>console.log(err)
+// )
