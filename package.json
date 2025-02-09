@@ -1,0 +1,14 @@
+{
+  "name": "appna-college",
+  "version": "1.0.0",
+  "description": "start database mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dhananjaymonga",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.10.0"
+  }
+}
