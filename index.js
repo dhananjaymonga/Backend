@@ -51,7 +51,7 @@ const coustomerModel=mongoose.model("coustomer",userSchema)
 coustomerModel.findByIdAndUpdate({name:"dhananjay"},{age:20}).then((res)=>
   {
 console.log(res)
-}).catch(err=>console.log(err))
+}).catch(err=>console.log(err)) 
 // coustomerModel.updateMany({age:{$gt:22}},{age:22
 
 // }).then
