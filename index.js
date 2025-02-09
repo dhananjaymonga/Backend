@@ -30,11 +30,18 @@ const coustomerModel=mongoose.model("coustomer",userSchema)
 //   console.log(res)
 // }).catch((err)=>{
 //   console.log(err)})
-coustomerModel.insertOne({
-  name:"dhananjay",
-  email:"dhananjaymonga10@gmail.com",
-  password:"dhbsjan",
-  age:21
-}
-).then((res)=> console.log(res)
-)
+// coustomerModel.insertOne({
+//   name:"dhananjay",
+//   email:"dhananjaymonga10@gmail.com",
+//   password:"dhbsjan",
+//   age:21
+// }
+// ).then((res)=> console.log(res)
+// ).catch(err=> console.log(err))
+// coustomerModel.find({age:{$gte:24}}).then((res)
+// =>{console.log(res)}).catch(err=>{console.log(err)})
+// coustomerModel.findById("67a83cf2219f778c9dc519df").then((res)=>{console.log(res)}).catch(err=>{console.log(err)})
+coustomerModel.updateOne({name:"dhananjay"},{age:22}).then((res)=>
+  {
+console.log(res)
+}).catch(err=>console.log(err))
