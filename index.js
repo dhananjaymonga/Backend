@@ -53,7 +53,7 @@ const coustomerModel=mongoose.model("coustomer",userSchema)
 // console.log(res)
 // }).catch(err=>console.log(err)) 
 // coustomerModel.updateMany({age:{$gt:22}},{age:22
-UserModel.deleteOne({age:21}).then((res)=>{
+UserModel.deleteMany({age:21}).then((res)=>{
   console.log(res)
 }).catch(err=>console.log(err))
 // }).then
