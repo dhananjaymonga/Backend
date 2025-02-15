@@ -59,3 +59,4 @@ UserModel.deleteMany({age:21}).then((res)=>{
 // }).then
 // (res=> console.log(res)).catch(err=>console.log(err)
 // )
+console.log("jj")
