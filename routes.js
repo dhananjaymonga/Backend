@@ -11,7 +11,11 @@ app.get("/search",(req,res)=>{
 })
 app.get("/:username",(req,res)=>{
     // res.send(req.params)
-    let httmlstr=`welcome backend@ ${username}`
+    console.log(req.query)
+    let {username}=req.params
+    let {jiy}=req.query
+    console.log(jiy,username)
+    let httmlstr=`welcome backend@ ${username},${jiy}`
     res.send(httmlstr)
 
 })
