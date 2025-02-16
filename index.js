@@ -1,18 +1,18 @@
-const mongoose= require("mongoose")
-const mongo = async ()=>{
-  await  mongoose.connect('mongodb://127.0.0.1:27017/test');
-console.log("connected mongodb")
-}
-mongo().then((res)=>console.log(res,"connected"))
-.catch(err=>console.log(err))
-const userSchema= new mongoose.Schema({
-    name:String,
-    email:String,
-    password:String,
-    age:Number
-})
-const UserModel=mongoose.model("user",userSchema)
-const coustomerModel=mongoose.model("coustomer",userSchema)
+// const mongoose= require("mongoose")
+// const mongo = async ()=>{
+//   await  mongoose.connect('mongodb://127.0.0.1:27017/test');
+// console.log("connected mongodb")
+// }
+// mongo().then((res)=>console.log(res,"connected"))
+// .catch(err=>console.log(err))
+// const userSchema= new mongoose.Schema({
+//     name:String,
+//     email:String,
+//     password:String,
+//     age:Number
+// })
+// const UserModel=mongoose.model("user",userSchema)
+// const coustomerModel=mongoose.model("coustomer",userSchema)
 // const NewUser=new UserModel({
 //   name:"dhananjay",
 //   email:"dhananjay.monga,10@gmail.com",
@@ -53,10 +53,11 @@ const coustomerModel=mongoose.model("coustomer",userSchema)
 // console.log(res)
 // }).catch(err=>console.log(err)) 
 // coustomerModel.updateMany({age:{$gt:22}},{age:22
-UserModel.deleteMany({age:21}).then((res)=>{
-  console.log(res)
-}).catch(err=>console.log(err))
-// }).then
-// (res=> console.log(res)).catch(err=>console.log(err)
-// )
-console.log("jj")
+// UserModel.deleteMany({age:21}).then((res)=>{
+//   console.log(res)
+// }).catch(err=>console.log(err))
+// // }).then
+// // (res=> console.log(res)).catch(err=>console.log(err)
+// // )
+
+// console.log("jj")
