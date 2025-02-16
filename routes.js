@@ -10,7 +10,10 @@ app.get("/search",(req,res)=>{
     res.send("hi search")
 })
 app.get("/:username",(req,res)=>{
-    res.send(req.params)
+    // res.send(req.params)
+    let httmlstr=`welcome backend@ ${username}`
+    res.send(httmlstr)
+
 })
 // app.get("*",(req,res)=>{
 //     res.send("not aviable")
