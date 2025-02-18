@@ -11,12 +11,12 @@ app.get('/favicon.ico', (req, res) => res.status(204)); // 204 No Content, not s
 app.get("/",(req,res)=>{
 res.render("index.ejs")
 })
-app.get("/about",(req,res)=>{
-    res.send(" about hi")
-})
-app.get("/search",(req,res)=>{
-    res.send("hi search")
-})
+// app.get("/about",(req,res)=>{
+//     res.send(" about hi")
+// })
+// app.get("/search",(req,res)=>{
+//     res.send("hi search")
+// })
 app.get("/:username",(req,res)=>{
     // res.send(req.params)
     console.log(req.query)
