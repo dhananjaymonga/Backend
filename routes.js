@@ -1,9 +1,11 @@
 const express=require("express")
 const app=express()
 app.set("view engine","ejs");
-app.get("/",(req,res)=>{
-    res.send("hi")
-})
+// app.get("/",(req,res)=>{
+//     res.send("hi")
+// })
+app.get('/favicon.ico', (req, res) => res.status(204)); // 204 No Content, not sending any icon
+
 app.get("/",(req,res)=>{
 res.render("index.ejs")
 })
@@ -21,7 +23,7 @@ app.get("/:username",(req,res)=>{
     console.log(q,username)
     if(!q){
         res.send("not streing")
-        res.send("<h1>nott</h1>")
+        // res.send("<h1>nott</h1>")
     }
     let httmlstr=`welcome backend@ ${username},${q}`
     res.send(httmlstr)
