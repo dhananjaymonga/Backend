@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+</head>
+<body>
+    <h1>Welcome @<%= data.name %></h1>
+    <button>Followers</button>
+    <button>Following</button>
+<h2>Followers:<%= data.followers%> &nbsp;&nbsp;&nbsp;&nbsp;Following:<%= data.following %></h2>
+    <!-- <h1>Accounts thatfollow you  ::<%= data.like%></h1> -->
+     <hr>
+    <ul>
+       <% for(post of data.posts){%>
+<img src="<%= post.image%>" style="width: 200px; height: 200px;" alt="">
+<h2>likes:<%=post.likes%></h2>
+<h2>Comment:<%=post.comments%></h2>
+       <%}%>
+
+        <!-- <%for(name of arr){%>
+            <li><%=name%></li>
+    <%}%> -->
+    </ul>
+</body>
+</html>
