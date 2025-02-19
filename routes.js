@@ -51,6 +51,10 @@ const app = express();
 const path = require("path"); // Path module import karein
 
 // View Engine Setup
+// app.use(express.static("public"))
+app.use(express.static(path.join(__dirname,"public")))
+// app.use(express.static(path.join(__dirname,"public/css")))
+// app.use(express.static(path.join(__dirname,"public/js")))
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views")); // Ensure correct views folder path
 app.get("/routes",(req,res)=>{

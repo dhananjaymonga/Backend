@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Instagram Profile</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
 <h2>Followers:<%= data.followers%> &nbsp;&nbsp;&nbsp;&nbsp;Following:<%= data.following %></h2>
     <!-- <h1>Accounts thatfollow you  ::<%= data.like%></h1> -->
      <hr>
+     <div class="main">
     <ul>
        <% for(post of data.posts){%>
 <img src="<%= post.image%>" style="width: 200px; height: 200px;" alt="">
@@ -23,5 +25,7 @@
             <li><%=name%></li>
     <%}%> -->
     </ul>
+    </div>
+    <script src="/script.js"></script>
 </body>
 </html>
