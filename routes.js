@@ -69,6 +69,7 @@ app.get("/:username", (req, res) => {
     const instData=require("./data.json")
 // console.log(instData[username])
   const  data=instData[username]
+  data
   
 console.log(data)
 
