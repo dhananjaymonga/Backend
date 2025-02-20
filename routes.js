@@ -62,19 +62,20 @@ app.get("/routes",(req,res)=>{
     res.render("routes.ejs",{value})
 })
 app.get("/:username", (req, res) => {
+    console.log(req.params.username)
     let username = req.params.username;
+    console.log(username)
     let arr=["Harsh","Rahul","Ankur","Harnoor","Kuki"]
-    // console.log(username)
     const instData=require("./data.json")
+// console.log(instData[username])
   const  data=instData[username]
   
 console.log(data)
 
-    // console.log(data)
-    // console.log(username);
+    
 if(data){
 
-    res.render("instagram", { username,arr,data}); // Correct usage
+    res.render("instagram", { arr,username,data}); // Correct usage
 }
 else{
     res.render("Notaviableuser.ejs")
