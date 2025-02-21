@@ -14,3 +14,7 @@ const app1={
 }
 
 app.detail()
+let arr=[1,3,5,7,9,20]
+console.log(arr.push(9
+))
+console.log(arr)
