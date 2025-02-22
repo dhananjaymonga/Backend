@@ -1,3 +1,5 @@
+const { name } = require("ejs")
+
 const app={
     name : "dhananjay",
     email:"dhananjaymonga@gmail.com",
@@ -21,3 +23,18 @@ arr.ha=()=>{
 console.log(arr.push(9
 ))
 console.log(arr)
+const personMaker=(name,age)=>{
+  const person={
+    name:name,
+    age:age,
+    
+    talk(){
+       return this.name
+    }
+  }
+  return person
+}
+const p1=personMaker("dhananjay",20)
+console.log(p1
+)
+console.log(p1.talk())
