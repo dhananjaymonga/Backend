@@ -29,7 +29,7 @@ const personMaker=(name,age)=>{
     age:age,
     
     talk(){
-       return this.name
+       returhis.name
     }
   }
   return person
@@ -38,3 +38,14 @@ const p1=personMaker("dhananjay",20)
 console.log(p1
 )
 console.log(p1.talk())
+
+function You(name,age){
+this.name=name
+this.age=age
+console.log(this)
+}
+You.prototype.talk=function(){
+  console.log(` my  nameis ${this.name}`)
+}
+let ji1 = new Person("dhananjay",21)
+let y2 = new Person("dhananjay",21)
