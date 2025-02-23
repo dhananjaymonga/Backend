@@ -29,7 +29,7 @@ const personMaker=(name,age)=>{
     age:age,
     
     talk(){
-       returhis.name
+       return this.name
     }
   }
   return person
@@ -47,5 +47,25 @@ console.log(this)
 You.prototype.talk=function(){
   console.log(` my  nameis ${this.name}`)
 }
-let ji1 = new Person("dhananjay",21)
-let y2 = new Person("dhananjay",21)
+let ji1 = new You("dhananjay",21)
+let y2 = new You("Harsh",22)
+// class typ
+
+
+class Person{
+  constructor(name,age){
+    this.name=name;
+    this.age=age;
+
+
+  }
+  talk(){
+    console.log(`hii,my name i ${this.name}`)
+
+  }
+
+}
+let h1=new Person("adam",21)
+let h2=new Person("har",21)
+h1.talk()
+h2.talk()
