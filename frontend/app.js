@@ -117,6 +117,8 @@ console.log(Dog1.name)
 console.log(Dog1.type)
 console.log(Dog1.eat)
 console.log(Dog1.barekk)
+console.log(Dog1.barekk)
+console.log(Mammal.eat)
 // 
 
 
