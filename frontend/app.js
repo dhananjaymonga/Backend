@@ -101,6 +101,9 @@ class Mammal{
   barekk(){
     console.log("woof ...")
   }
+  eat(){
+    console.log("i am eating")
+  }
 }class Cat extends Mammal{
   constructor(name){
   super(name)
