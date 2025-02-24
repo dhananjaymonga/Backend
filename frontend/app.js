@@ -85,3 +85,35 @@ class  Teacher extends Person{
    }
 }
 let ha= new Student("harsh", 24,63)
+// inhertiance second Option
+class Mammal{
+  constructor(name){
+    this.name=name;
+    this.type="warm==bloded"
+  }
+  eat(){
+    console.log("i am eating")
+  }
+}class Dog extends Mammal{ 
+  constructor(name){
+    super(name)
+  }
+  barekk(){
+    console.log("woof ...")
+  }
+}class Cat extends Mammal{
+  constructor(name){
+  super(name)
+  }
+  meowww  (){
+    console.log("i am eating")
+  }
+}
+let Dog1=new Dog("tomm")
+console.log(Dog1.name)
+console.log(Dog1.type)
+console.log(Dog1.eat)
+console.log(Dog1.barekk)
+// 
+
+
