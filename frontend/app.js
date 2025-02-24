@@ -69,3 +69,19 @@ let h1=new Person("adam",21)
 let h2=new Person("har",21)
 h1.talk()
 h2.talk()
+// class 
+class  Student extends Person{
+  constructor(name,age,marks){
+    // console.log()
+    super(name,age)
+    this.marks=marks
+
+  }
+}
+class  Teacher extends Person{
+   constructor (name,age,subject){
+    super(name,age)
+    this.subject=subject
+   }
+}
+let ha= new Student("harsh", 24,63)
