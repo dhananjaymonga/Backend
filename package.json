@@ -2,9 +2,10 @@
   "name": "appna-college",
   "version": "1.0.0",
   "description": "start database mongodb",
-  "main": "routes.js",
+  "main": "ResT.js",
   "type": "commonjs",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dhananjaymonga",
@@ -12,6 +13,7 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "mongoose": "^8.10.0"
+    "mongoose": "^8.10.0",
+    "nodemon": "^3.1.9"
   }
 }
