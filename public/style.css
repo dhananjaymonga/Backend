@@ -6,11 +6,38 @@ ul{
     background-color: black;
 } */
 .main{
-    width: 900px;
+    width: 100%;
     height: 900px;
-    background-color: rgb(207, 0, 196);
+    /* background-color: rgb(207, 0, 196); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .user{
     color:orangered;
     font-style: italic;
+}
+form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+   
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+pre {
+    background: #f4f4f4;
+    padding: 10px;
 }

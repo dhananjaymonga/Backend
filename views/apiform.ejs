@@ -1,0 +1,31 @@
+<%-include("includes/head.ejs")%>
+<body>
+    <div class="main">
+    <h2>User Details Form</h2>
+
+    <form action="/register" method="post">
+        <label>Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label>Content:</label>
+        <textarea id="content"  name="content" required></textarea>
+
+        <label>Skills (comma separated):</label>
+        <input type="text" id="skills" id="skill" required>
+
+        <label>Age:</label>
+        <input type="number" id="age"  name="age" required>
+
+        <label>Study:</label>
+        <input type="text" id="study"  name="study" required>
+
+        <label>City:</label>
+        <input type="text"  id="city"  name="city" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Submitted Data:</h3>
+    <pre id="output"></pre>
+    </div>
+</body>

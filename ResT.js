@@ -118,6 +118,29 @@ app.get("/posts",(req,res)=>{
     res.render("apidata.ejs",{posts})
     // res.send("started server")
 })
+app.get("/posts/new",(req,res)=>{
+    res.render("apiform.ejs",{posts})
+    // res.send("started server")
+})
+app.post("/register",(req,res)=>{
+    const data=req.body
+    const { username, content, skill, age, study, city } = req.body;
+    const skillArray = skill ? skill.split(",").map(skill => skill.trim()) : [];
+
+posts.push({
+    username,
+    content,
+    skill:skillArray,
+    age:parseInt(age),
+    study,
+    city
+})
+res.redirect("/posts")
+    console.log(data)
+})
+
+
+
 app.listen(port,()=>{
     console.log("started",port)
 })
