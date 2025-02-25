@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="">
 
-<h1>shazjh</h1>
-<h1>shazjh</h1>
-<h1>shazjh</h1>
-dhjsds
+<%-include("includes/head.ejs")%>
+<body>
+    
+
+    <div class="user">
+
+
+    hdsbj
+<% posts.map((val,index)=>{ %>
+   
+<h1 class="user"><%= index + 1 %>. <%=val.username%></h1>
+<h1><%= val.content%> </h1>
+<h2>Skills: 
+    <% val.skill.forEach((skill,i,arr )=> { %>
+        <span><%= skill %></span><%= i < arr.length - 1 ? ", " : "" %>
+    <% }) %>
+</h2>
+<h1><%= val.study%> </h1>
+<h1><%= val.city%> </h1>
+<hr>
+    
+<% }) %>
     </div>
     <script src="/apidata.js"></script>
 </body>

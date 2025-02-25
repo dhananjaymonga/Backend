@@ -10,3 +10,7 @@ ul{
     height: 900px;
     background-color: rgb(207, 0, 196);
 }
+.user{
+    color:orangered;
+    font-style: italic;
+}

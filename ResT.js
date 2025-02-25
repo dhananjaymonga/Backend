@@ -4,7 +4,7 @@ const path=require("path")
 port=8080;
 app.set("view engine","ejs")
 app.set("views",path.join(__dirname,"views"))
-// app.set(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname,"public")));
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 let posts=[
@@ -116,7 +116,7 @@ let posts=[
   
 app.get("/posts",(req,res)=>{
     res.render("apidata.ejs",{posts})
-    res.send("started server")
+    // res.send("started server")
 })
 app.listen(port,()=>{
     console.log("started",port)
