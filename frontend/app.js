@@ -119,6 +119,7 @@ console.log(Dog1.eat)
 console.log(Dog1.barekk)
 console.log(Dog1.barekk)
 console.log(Mammal.eat)
+console.log("start crud")
 // 
 
 
