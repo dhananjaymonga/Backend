@@ -1,0 +1,11 @@
+<%-include("includes/head.ejs")%>
+
+<body>
+    <form action="/posts/<%= edit.id %>?_method=PATCH" method="post">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="<%= edit.city %>">
+
+
+        <button type="submit">Update</button>
+    </form>
+</body>

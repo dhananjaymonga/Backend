@@ -8,8 +8,9 @@
 
     hdsbj
 <% posts.map((val,index)=>{ %>
+    <a href="http://localhost:8080/posts/<%=val.username%>">See in Detail</a>
    
-<h1 class="user"><%= index + 1 %>. <%=val.username%></h1>
+<h1 class="user"><%= index + 1 %>. <%=val.id%></h1>
 <h1><%= val.content%> </h1>
 <h2>Skills: 
     <% val.skill.forEach((skill,i,arr )=> { %>
@@ -19,8 +20,11 @@
 <h1><%= val.study%> </h1>
 <h1><%= val.city%> </h1>
 <hr>
-    
+<a href="http://localhost:8080/posts/<%=val.id%>/edit"> in Detail</a>
+ 
 <% }) %>
+<a href="http://localhost:8080/posts/new" >New user studen</a> 
+
     </div>
     <script src="/apidata.js"></script>
 </body>
