@@ -48,6 +48,7 @@ res.send("set and done")
 console.log(data)
 
         })
+        console.log("set authentication")
 app.listen(port,()=>{
     
     console.log("start server")
