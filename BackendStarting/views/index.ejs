@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-gray-100 flex justify-center items-center h-screen">
+        <form action="/submit" method="POST" class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2 class="text-2xl font-bold mb-4 text-center text-blue-600">Register Form</h2>
+    
+            <label class="block mb-2">Name:</label>
+            <input type="text" name="name" required class="w-full p-2 border rounded">
+    
+            <label class="block mt-3 mb-2">Email:</label>
+            <input type="email" name="email" required class="w-full p-2 border rounded">
+    
+            <label class="block mt-3 mb-2">Password:</label>
+            <input type="password" name="password" required class="w-full p-2 border rounded">
+    
+            <label class="block mt-3 mb-2">Age:</label>
+            <input type="number" name="age" required class="w-full p-2 border rounded">
+    
+            <button type="submit" class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
