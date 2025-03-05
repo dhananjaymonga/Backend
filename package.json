@@ -2,7 +2,7 @@
   "name": "appna-college",
   "version": "1.0.0",
   "description": "start database mongodb",
-  "main": "ResT.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "start": "nodemon",
